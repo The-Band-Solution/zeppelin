@@ -1,0 +1,31 @@
+services:
+  web:
+    container_name: zeppelin-backend
+    restart: always
+    build: ./backend
+    depends_on:
+      - postgres
+    ports:
+      - "8000:8000"
+    links:
+      - postgres:postgres
+    env_file: .env
+  
+  postgres:
+    image: postgres
+    container_name: zeppelin-db
+    restart: always
+    environment:
+      POSTGRES_DB: "zeppelin"
+      POSTGRES_USER: "zeppelin"
+      POSTGRES_PASSWORD: "zeppelin"
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data/
+volumes:
+  pgdata:
+networks: 
+  default:
+    name:  zeppelin-networks
+    driver: bridge  
