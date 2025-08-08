@@ -1,1 +1,5 @@
-# Zeppelin
+# ZEPPELIN: A DIAGNOSTIC INSTRUMENT FOR Continuou Software Engineering
+
+It helps identify the degree of adoption of Continuou Software Engineering practices in each StH stage. This way, organizations can have a panoramic view of the CSE practices they perform, identify where they are in the CSE evolutionary path and which areas should be improved. Thus, it is possible to develop a plan to improve and advance software development towards CSE. Zeppelin uses StH  as reference model and also considers Continuous* activities proposed in [8], CSE practices and aspects provided in the Eye of CSE [12] and CSE processes constituting the CSE framework (hereafter, called FCSE) proposed in [3].
+
+> The name Zeppelin was chosen because the diagnosis instrument allows viewing an organization in a panoramic way, as if we were in a zeppelin seeing a city. Besides, Led Zeppelin band created the Stairway to Heaven song.
