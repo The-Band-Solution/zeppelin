@@ -49,7 +49,7 @@ class Questionnaire(Historical):
     """"""
 
     applied_date = models.DateField(null=True, blank=True)
-    document = models.FileField(null=True, blank=True)
+    #document = models.FileField(null=True, blank=True)
 
 
     employee = models.ForeignKey('apps_employee.Employee', blank=True, null=True, on_delete=models.CASCADE, related_name="employee_%(class)s")

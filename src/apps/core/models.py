@@ -1,9 +1,9 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+from polymorphic.models import PolymorphicModel
 
 
-
-class Historical(models.Model):
+class Historical(PolymorphicModel,models.Model):
     """"""
 
     created_at = models.DateTimeField(auto_now_add=True)  # melhor que blank=True
@@ -15,7 +15,7 @@ class Historical(models.Model):
         db_table = 'historical'    
         #abstract = True    
 
-class Base(models.Model):
+class Base(PolymorphicModel, models.Model):
     """"""
 
     nome = models.CharField(max_length=300, null=True, blank=True)

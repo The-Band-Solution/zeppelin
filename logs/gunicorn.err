@@ -771,3 +771,171 @@ IndentationError: unexpected indent
 [2025-08-09 14:31:30 -0300] [44] [INFO] Worker exiting (pid: 44)
 [2025-08-09 14:31:30 -0300] [45] [INFO] Worker exiting (pid: 45)
 [2025-08-09 17:31:31 +0000] [27] [INFO] Shutting down: Master
+[2025-08-09 18:14:54 +0000] [12] [INFO] Starting gunicorn 20.1.0
+[2025-08-09 18:14:54 +0000] [12] [INFO] Listening at: http://0.0.0.0:8000 (12)
+[2025-08-09 18:14:54 +0000] [12] [INFO] Using worker: sync
+[2025-08-09 18:14:54 +0000] [13] [INFO] Booting worker with pid: 13
+[2025-08-09 18:14:54 +0000] [14] [INFO] Booting worker with pid: 14
+[2025-08-09 15:16:50 -0300] [13] [INFO] Worker reloading: /app/src/apps/continuousstar/serializers.py modified
+[2025-08-09 15:16:50 -0300] [13] [INFO] Worker exiting (pid: 13)
+[2025-08-09 15:16:51 -0300] [14] [INFO] Worker reloading: /app/src/apps/continuousstar/serializers.py modified
+[2025-08-09 15:16:51 -0300] [14] [INFO] Worker exiting (pid: 14)
+[2025-08-09 18:16:51 +0000] [17] [INFO] Booting worker with pid: 17
+[2025-08-09 18:16:51 +0000] [18] [INFO] Booting worker with pid: 18
+[2025-08-09 15:17:20 -0300] [17] [INFO] Worker reloading: /app/src/apps/practitionerseye/models.py modified
+[2025-08-09 15:17:20 -0300] [17] [INFO] Worker exiting (pid: 17)
+[2025-08-09 15:17:20 -0300] [18] [INFO] Worker reloading: /app/src/apps/practitionerseye/models.py modified
+[2025-08-09 15:17:20 -0300] [18] [INFO] Worker exiting (pid: 18)
+[2025-08-09 18:17:20 +0000] [21] [INFO] Booting worker with pid: 21
+[2025-08-09 18:17:21 +0000] [22] [INFO] Booting worker with pid: 22
+[2025-08-09 15:17:27 -0300] [21] [INFO] Worker reloading: /app/src/apps/practitionerseye/models.py modified
+[2025-08-09 15:17:27 -0300] [21] [INFO] Worker exiting (pid: 21)
+[2025-08-09 15:17:27 -0300] [22] [INFO] Worker reloading: /app/src/apps/practitionerseye/models.py modified
+[2025-08-09 15:17:27 -0300] [22] [INFO] Worker exiting (pid: 22)
+[2025-08-09 18:17:27 +0000] [25] [INFO] Booting worker with pid: 25
+[2025-08-09 18:17:27 +0000] [26] [INFO] Booting worker with pid: 26
+[2025-08-09 15:18:32 -0300] [25] [INFO] Worker reloading: /app/src/apps/questionnaire/models.py modified
+[2025-08-09 15:18:32 -0300] [26] [INFO] Worker reloading: /app/src/apps/questionnaire/models.py modified
+[2025-08-09 15:18:32 -0300] [25] [INFO] Worker exiting (pid: 25)
+[2025-08-09 15:18:32 -0300] [26] [INFO] Worker exiting (pid: 26)
+[2025-08-09 18:18:32 +0000] [29] [INFO] Booting worker with pid: 29
+[2025-08-09 18:18:32 +0000] [30] [INFO] Booting worker with pid: 30
+[2025-08-09 15:18:39 -0300] [29] [INFO] Worker reloading: /app/src/zeppelin/settings/base.py modified
+[2025-08-09 15:18:39 -0300] [29] [INFO] Worker exiting (pid: 29)
+[2025-08-09 15:18:39 -0300] [30] [INFO] Worker reloading: /app/src/zeppelin/settings/base.py modified
+[2025-08-09 15:18:39 -0300] [30] [INFO] Worker exiting (pid: 30)
+[2025-08-09 18:18:39 +0000] [33] [INFO] Booting worker with pid: 33
+[2025-08-09 18:18:40 +0000] [34] [INFO] Booting worker with pid: 34
+[2025-08-09 18:18:41 +0000] [12] [INFO] Handling signal: term
+[2025-08-09 15:18:41 -0300] [33] [INFO] Worker exiting (pid: 33)
+[2025-08-09 15:18:41 -0300] [34] [INFO] Worker exiting (pid: 34)
+[2025-08-09 18:18:41 +0000] [12] [INFO] Shutting down: Master
+[2025-08-09 18:19:54 +0000] [12] [INFO] Starting gunicorn 20.1.0
+[2025-08-09 18:19:54 +0000] [12] [INFO] Listening at: http://0.0.0.0:8000 (12)
+[2025-08-09 18:19:54 +0000] [12] [INFO] Using worker: sync
+[2025-08-09 18:19:54 +0000] [13] [INFO] Booting worker with pid: 13
+[2025-08-09 18:19:54 +0000] [14] [INFO] Booting worker with pid: 14
+[2025-08-09 15:21:06 -0300] [14] [INFO] Worker reloading: /app/src/apps/continuousstar/serializers.py modified
+[2025-08-09 15:21:06 -0300] [14] [INFO] Worker exiting (pid: 14)
+[2025-08-09 18:21:06 +0000] [17] [INFO] Booting worker with pid: 17
+[2025-08-09 15:21:07 -0300] [13] [INFO] Worker reloading: /app/src/apps/continuousstar/serializers.py modified
+[2025-08-09 15:21:07 -0300] [13] [INFO] Worker exiting (pid: 13)
+[2025-08-09 18:21:07 +0000] [19] [INFO] Booting worker with pid: 19
+[2025-08-09 15:21:27 -0300] [19] [INFO] Worker reloading: /app/src/apps/core/models.py modified
+[2025-08-09 15:21:27 -0300] [19] [INFO] Worker exiting (pid: 19)
+[2025-08-09 18:21:27 +0000] [21] [INFO] Booting worker with pid: 21
+[2025-08-09 15:21:27 -0300] [17] [INFO] Worker reloading: /app/src/apps/core/models.py modified
+[2025-08-09 15:21:27 -0300] [17] [INFO] Worker exiting (pid: 17)
+[2025-08-09 18:21:27 +0000] [22] [INFO] Booting worker with pid: 22
+[2025-08-09 15:21:33 -0300] [22] [INFO] Worker reloading: /app/src/apps/core/models.py modified
+[2025-08-09 15:21:33 -0300] [22] [INFO] Worker exiting (pid: 22)
+[2025-08-09 18:21:34 +0000] [25] [INFO] Booting worker with pid: 25
+[2025-08-09 15:21:34 -0300] [25] [ERROR] unmatched ')' (models.py, line 6)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/src/zeppelin/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lib/python3.10/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python3.10/site-packages/django/apps/registry.py", line 116, in populate
+    app_config.import_models()
+  File "/usr/local/lib/python3.10/site-packages/django/apps/config.py", line 269, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/src/apps/core/models.py", line 6
+    class HistoricalPolymorphicModel,models.Model):
+                                                 ^
+SyntaxError: unmatched ')'
+[2025-08-09 15:21:34 -0300] [21] [INFO] Worker reloading: /app/src/apps/core/models.py modified
+[2025-08-09 15:21:34 -0300] [21] [INFO] Worker exiting (pid: 21)
+[2025-08-09 18:21:35 +0000] [27] [INFO] Booting worker with pid: 27
+[2025-08-09 15:21:35 -0300] [27] [ERROR] unmatched ')' (models.py, line 6)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/src/zeppelin/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lib/python3.10/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python3.10/site-packages/django/apps/registry.py", line 116, in populate
+    app_config.import_models()
+  File "/usr/local/lib/python3.10/site-packages/django/apps/config.py", line 269, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/src/apps/core/models.py", line 6
+    class HistoricalPolymorphicModel,models.Model):
+                                                 ^
+SyntaxError: unmatched ')'
+[2025-08-09 15:21:36 -0300] [25] [INFO] Worker reloading: /app/src/apps/core/models.py modified
+[2025-08-09 15:21:36 -0300] [25] [INFO] Worker exiting (pid: 25)
+[2025-08-09 18:21:36 +0000] [29] [INFO] Booting worker with pid: 29
+[2025-08-09 15:21:37 -0300] [27] [INFO] Worker reloading: /app/src/apps/core/models.py modified
+[2025-08-09 15:21:37 -0300] [27] [INFO] Worker exiting (pid: 27)
+[2025-08-09 18:21:37 +0000] [31] [INFO] Booting worker with pid: 31
+[2025-08-09 18:21:38 +0000] [12] [INFO] Handling signal: term
+[2025-08-09 15:21:38 -0300] [31] [INFO] Worker exiting (pid: 31)
+[2025-08-09 15:21:38 -0300] [29] [INFO] Worker exiting (pid: 29)
+[2025-08-09 18:23:01 +0000] [14] [INFO] Starting gunicorn 20.1.0
+[2025-08-09 18:23:01 +0000] [14] [INFO] Listening at: http://0.0.0.0:8000 (14)
+[2025-08-09 18:23:01 +0000] [14] [INFO] Using worker: sync
+[2025-08-09 18:23:01 +0000] [15] [INFO] Booting worker with pid: 15
+[2025-08-09 18:23:01 +0000] [16] [INFO] Booting worker with pid: 16
+[2025-08-09 18:31:43 +0000] [14] [INFO] Handling signal: term
+[2025-08-09 15:31:43 -0300] [16] [INFO] Worker exiting (pid: 16)
+[2025-08-09 15:31:43 -0300] [15] [INFO] Worker exiting (pid: 15)
+[2025-08-09 18:31:44 +0000] [14] [INFO] Shutting down: Master
