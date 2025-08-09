@@ -1,8 +1,3 @@
-Perfeito 👍
-Segue o **README revisado e completo**, agora contendo a explicação do **Makefile** e do **.env** de forma organizada e profissional:
-
----
-
 # ZEPPELIN: A DIAGNOSTIC INSTRUMENT FOR Continuous Software Engineering
 
 It helps identify the degree of adoption of Continuous Software Engineering (CSE) practices in each StH stage. This way, organizations can have a panoramic view of the CSE practices they perform, identify where they are in the CSE evolutionary path, and which areas should be improved. Thus, it is possible to develop a plan to improve and advance software development towards CSE. Zeppelin uses StH \[3] as a reference model and also considers Continuous\* activities proposed in \[2], CSE practices and aspects provided in the Eye of CSE \[4], and CSE processes constituting the CSE framework (hereafter, called FCSE) proposed in \[1].
