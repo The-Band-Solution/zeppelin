@@ -2,7 +2,7 @@
 
 It helps identify the degree of adoption of Continuous Software Engineering (CSE) practices in each StH stage. This way, organizations can have a panoramic view of the CSE practices they perform, identify where they are in the CSE evolutionary path, and which areas should be improved. Thus, it is possible to develop a plan to improve and advance software development towards CSE. Zeppelin uses StH \[3] as a reference model and also considers Continuous\* activities proposed in \[2], CSE practices and aspects provided in the Eye of CSE \[4], and CSE processes constituting the CSE framework (hereafter, called FCSE) proposed in \[1].
 
-> The name Zeppelin was chosen because the diagnosis instrument allows viewing an organization in a panoramic way, as if we were in a zeppelin seeing a city. Besides, Led Zeppelin band created the Stairway to Heaven song.
+> The name Zeppelin was chosen because the diagnostic tool allows viewing an organization in a panoramic way, as if we were in a zeppelin looking at a city. Moreover, the band Led Zeppelin created the song "Stairway to Heaven."
 
 ---
 
@@ -17,32 +17,32 @@ It helps identify the degree of adoption of Continuous Software Engineering (CSE
 
 ## ⚙️ Makefile Commands
 
-O projeto inclui um `Makefile` para facilitar a execução de tarefas no ambiente Docker.
+The project includes a `Makefile` to facilitate running tasks in the Docker environment.
 
-| Comando          | Descrição                                                                      |
-| ---------------- | ------------------------------------------------------------------------------ |
-| `make up`        | Sobe os containers definidos no `docker-compose.yml`.                          |
-| `make build`     | Reconstrói as imagens e sobe os containers. Use após alterações no Dockerfile. |
-| `make down`      | Para e remove os containers, preservando volumes.                              |
-| `make destroy`   | Para e remove containers **e** volumes (apaga dados persistidos).              |
-| `make superuser` | Executa o script `create_superuser.sh` para criar um superusuário Django.      |
+| Command          | Description                                                                 |
+| ---------------- | --------------------------------------------------------------------------- |
+| `make up`        | Starts the containers defined in `docker-compose.yml`.                      |
+| `make build`     | Rebuilds images and starts containers. Use after changes in the Dockerfile. |
+| `make down`      | Stops and removes containers, preserving volumes.                           |
+| `make destroy`   | Stops and removes containers **and** volumes (erases persisted data).       |
+| `make superuser` | Runs the `create_superuser.sh` script to create a Django superuser.         |
 
-**Exemplos:**
+**Examples:**
 
 ```bash
-# Iniciar o ambiente
+# Start the environment
 make up
 
-# Rebuild e iniciar containers
+# Rebuild and start containers
 make build
 
-# Parar containers
+# Stop containers
 make down
 
-# Remover tudo (inclusive volumes)
+# Remove everything (including volumes)
 make destroy
 
-# Criar superusuário Django
+# Create Django superuser
 make superuser
 ```
 
@@ -50,84 +50,119 @@ make superuser
 
 ## 📄 Environment Variables (`.env`)
 
-O arquivo `.env` contém todas as variáveis de ambiente necessárias para configuração e execução do Zeppelin.
+The `.env` file contains all environment variables required for Zeppelin’s configuration and execution.
 
-### 🔹 Configurações Gerais
+### 🔹 General Settings
 
-| Variável                 | Descrição                                                  | Exemplo                   |
-| ------------------------ | ---------------------------------------------------------- | ------------------------- |
-| `ALLOWED_HOSTS`          | Lista de hosts permitidos pelo Django (`*` permite todos). | `*`                       |
-| `DEBUG`                  | Modo de depuração (`True` ou `False`).                     | `True`                    |
-| `SECRET_KEY`             | Chave secreta usada pelo Django (mantenha privada).        | `3izb^ryg...`             |
-| `DJANGO_SETTINGS_MODULE` | Módulo de configurações do Django.                         | `zeppelin.settings.local` |
-
----
-
-### 🔹 Banco de Dados
-
-| Variável            | Descrição                                                       | Exemplo                         |
-| ------------------- | --------------------------------------------------------------- | ------------------------------- |
-| `USE_SQLITE`        | Define se o SQLite será usado (`True`) ou PostgreSQL (`False`). | `False`                         |
-| `DB_ENGINE_LOCAL`   | Backend do banco.                                               | `django.db.backends.postgresql` |
-| `DB_HOST_LOCAL`     | Host do banco.                                                  | `zeppelin-db`                   |
-| `DB_NAME_LOCAL`     | Nome do banco.                                                  | `zeppelin`                      |
-| `DB_USER_LOCAL`     | Usuário do banco.                                               | `zeppelin`                      |
-| `DB_PASSWORD_LOCAL` | Senha do banco.                                                 | `zeppelin`                      |
-| `DB_PORT_LOCAL`     | Porta do banco.                                                 | `5432`                          |
+| Variable                 | Description                                       | Example                   |
+| ------------------------ | ------------------------------------------------- | ------------------------- |
+| `ALLOWED_HOSTS`          | List of allowed hosts in Django (`*` allows all). | `*`                       |
+| `DEBUG`                  | Debug mode (`True` or `False`).                   | `True`                    |
+| `SECRET_KEY`             | Secret key used by Django (keep it private).      | `3izb^ryg...`             |
+| `DJANGO_SETTINGS_MODULE` | Django settings module.                           | `zeppelin.settings.local` |
 
 ---
 
-### 🔹 Configuração de E-mail
+### 🔹 Database
 
-| Variável              | Descrição                    | Exemplo                |
-| --------------------- | ---------------------------- | ---------------------- |
-| `DEFAULT_FROM_EMAIL`  | E-mail padrão de envio.      | `no-reply@exemplo.com` |
-| `EMAIL_HOST`          | Servidor SMTP.               | `smtp.exemplo.com`     |
-| `EMAIL_HOST_USER`     | Usuário SMTP.                | `no-reply@exemplo.com` |
-| `EMAIL_HOST_PASSWORD` | Senha SMTP.                  | `minhasenha`           |
-| `EMAIL_PORT`          | Porta SMTP.                  | `587`                  |
-| `EMAIL_USE_TLS`       | Uso de TLS (`True`/`False`). | `True`                 |
-
----
-
-### 🔹 Segurança e Hash
-
-| Variável       | Descrição                             | Exemplo        |
-| -------------- | ------------------------------------- | -------------- |
-| `HASHIDS_SALT` | Salt para geração de IDs codificados. | `hA8(scA@!...` |
+| Variable            | Description                                             | Example                         |
+| ------------------- | ------------------------------------------------------- | ------------------------------- |
+| `USE_SQLITE`        | Whether to use SQLite (`True`) or PostgreSQL (`False`). | `False`                         |
+| `DB_ENGINE_LOCAL`   | Database backend.                                       | `django.db.backends.postgresql` |
+| `DB_HOST_LOCAL`     | Database host.                                          | `zeppelin-db`                   |
+| `DB_NAME_LOCAL`     | Database name.                                          | `zeppelin`                      |
+| `DB_USER_LOCAL`     | Database user.                                          | `zeppelin`                      |
+| `DB_PASSWORD_LOCAL` | Database password.                                      | `zeppelin`                      |
+| `DB_PORT_LOCAL`     | Database port.                                          | `5432`                          |
 
 ---
 
-### 🔹 URLs e Integrações
+### 🔹 Email Configuration
 
-| Variável         | Descrição                      | Exemplo                 |
+| Variable              | Description               | Example                |
+| --------------------- | ------------------------- | ---------------------- |
+| `DEFAULT_FROM_EMAIL`  | Default sender email.     | `no-reply@example.com` |
+| `EMAIL_HOST`          | SMTP server.              | `smtp.example.com`     |
+| `EMAIL_HOST_USER`     | SMTP user.                | `no-reply@example.com` |
+| `EMAIL_HOST_PASSWORD` | SMTP password.            | `mypassword`           |
+| `EMAIL_PORT`          | SMTP port.                | `587`                  |
+| `EMAIL_USE_TLS`       | Use TLS (`True`/`False`). | `True`                 |
+
+---
+
+### 🔹 Security and Hash
+
+| Variable       | Description                      | Example        |
+| -------------- | -------------------------------- | -------------- |
+| `HASHIDS_SALT` | Salt for generating encoded IDs. | `hA8(scA@!...` |
+
+---
+
+### 🔹 URLs and Integrations
+
+| Variable         | Description                    | Example                 |
 | ---------------- | ------------------------------ | ----------------------- |
-| `URL_VALIDATION` | URL para validação (opcional). | *(vazio)*               |
-| `URL`            | URL base do sistema.           | `http://localhost:8000` |
+| `URL_VALIDATION` | URL for validation (optional). | *(empty)*               |
+| `URL`            | Base system URL.               | `http://localhost:8000` |
 
 ---
 
 ### 🔹 PostgreSQL (Docker)
 
-Usadas pelo container PostgreSQL no `docker-compose.yml`:
+Used by the PostgreSQL container in `docker-compose.yml`:
 
-| Variável            | Descrição         | Exemplo    |
-| ------------------- | ----------------- | ---------- |
-| `POSTGRES_DB`       | Nome do banco.    | `zeppelin` |
-| `POSTGRES_USER`     | Usuário do banco. | `zeppelin` |
-| `POSTGRES_PASSWORD` | Senha do banco.   | `zeppelin` |
-
----
-
-### 🔹 Superusuário Django (Criação Automática)
-
-| Variável                    | Descrição        | Exemplo           |
-| --------------------------- | ---------------- | ----------------- |
-| `DJANGO_SUPERUSER_USERNAME` | Nome do admin.   | `admin`           |
-| `DJANGO_SUPERUSER_EMAIL`    | E-mail do admin. | `admin@admin.org` |
-| `DJANGO_SUPERUSER_PASSWORD` | Senha do admin.  | `xxxxxx!` |
+| Variable            | Description        | Example    |
+| ------------------- | ------------------ | ---------- |
+| `POSTGRES_DB`       | Database name.     | `zeppelin` |
+| `POSTGRES_USER`     | Database user.     | `zeppelin` |
+| `POSTGRES_PASSWORD` | Database password. | `zeppelin` |
 
 ---
 
-Se quiser, posso já **incluir um passo-a-passo de inicialização rápida** no final do README para que novos usuários consigam rodar o projeto em menos de 5 minutos.
-Quer que eu adicione essa seção também?
+### 🔹 Django Superuser (Automatic Creation)
+
+| Variable                    | Description     | Example           |
+| --------------------------- | --------------- | ----------------- |
+| `DJANGO_SUPERUSER_USERNAME` | Admin username. | `admin`           |
+| `DJANGO_SUPERUSER_EMAIL`    | Admin email.    | `admin@admin.org` |
+| `DJANGO_SUPERUSER_PASSWORD` | Admin password. | `xxxxxx!`         |
+
+---
+
+## 🚀 Quick Start
+
+Follow these steps to get Zeppelin running in under 5 minutes:
+
+
+1. **Copy the `.env` file and configure your settings**
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Update the variables inside `.env` according to your environment.
+
+2. **Start the environment with Docker**
+
+   ```bash
+   make up
+   ```
+
+   This will pull/build images and start the containers.
+
+3. **(Optional) Create a Django superuser**
+
+   ```bash
+   make superuser
+   ```
+
+4. **Access Zeppelin**
+
+   * **Web Interface:** [http://localhost:8000](http://localhost:8000)
+   * **Admin Panel:** [http://localhost:8000/admin](http://localhost:8000/admin)
+
+6. **Stop the environment**
+
+   ```bash
+   make down
+   ```
