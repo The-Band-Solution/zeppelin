@@ -1,31 +1,37 @@
 services:
-  web:
-    container_name: zeppelin-backend
-    restart: always
-    build: ./backend
-    depends_on:
-      - postgres
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: zeppelin
     ports:
       - "8000:8000"
-    links:
-      - postgres:postgres
-    env_file: .env
-  
-  postgres:
-    image: postgres
+    volumes:
+      - .:/app
+      - ./logs:/app/logs
+    working_dir: /app/src
+    depends_on:
+      - db
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app/src
+    command: supervisord -c /etc/supervisord.conf
+
+  db:
+    image: postgres:15
     container_name: zeppelin-db
     restart: always
-    environment:
-      POSTGRES_DB: "zeppelin"
-      POSTGRES_USER: "zeppelin"
-      POSTGRES_PASSWORD: "zeppelin"
-    ports:
-      - "5432:5432"
     volumes:
-      - pgdata:/var/lib/postgresql/data/
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    env_file:
+      - .env
+
+  
+  
 volumes:
-  pgdata:
-networks: 
-  default:
-    name:  zeppelin-networks
-    driver: bridge  
+  postgres_data:  
