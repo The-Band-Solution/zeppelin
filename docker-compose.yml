@@ -6,6 +6,7 @@ services:
     container_name: zeppelin
     ports:
       - "8000:8000"
+      - "5555:5555"
     volumes:
       - .:/app
       - ./logs:/app/logs
@@ -38,23 +39,6 @@ services:
     ports:
       - "6379:6379"
     restart: always
-
-  flower:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: flower_zeppelin
-    command: celery --broker=redis://redis:6379/0 -A zeppelin flower --port=5555
-    ports:
-      - "5555:5555"
-    volumes:
-      - .:/app
-    working_dir: /app/src
-    depends_on:
-      - redis
-      - app
-    env_file:
-      - .env
 
 volumes:
   postgres_data:
