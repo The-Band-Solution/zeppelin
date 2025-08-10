@@ -1669,3 +1669,7 @@ gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
 [2025-08-10 12:16:26 +0000] [14] [INFO] Using worker: sync
 [2025-08-10 12:16:26 +0000] [15] [INFO] Booting worker with pid: 15
 [2025-08-10 12:16:26 +0000] [16] [INFO] Booting worker with pid: 16
+[2025-08-10 12:23:29 +0000] [14] [INFO] Handling signal: term
+[2025-08-10 09:23:29 -0300] [15] [INFO] Worker exiting (pid: 15)
+[2025-08-10 09:23:29 -0300] [16] [INFO] Worker exiting (pid: 16)
+[2025-08-10 12:23:29 +0000] [14] [INFO] Shutting down: Master
