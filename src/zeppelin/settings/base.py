@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admindocs',
-# 3rd-party Apps
+     # 3rd-party Apps
     'django_cpf_cnpj',
     'easyaudit',
     'polymorphic',
@@ -54,8 +54,9 @@ INSTALLED_APPS = [
     'oauth2_provider',
     'drf_yasg',
     'behave_django',
-# External Apps
-# Local Apps
+    'django_celery_beat',
+    # External Apps
+    # Local Apps
     'apps.core',
     'apps.sth',
     'apps.continuousstar',
@@ -222,3 +223,9 @@ LOGGING = {
         },
     },
 }
+
+CELERY_BROKER_URL = os.getenv("CELERY_BROKER_URL", "redis://redis:6379/0")
+CELERY_ACCEPT_CONTENT = ["json"]
+CELERY_TASK_SERIALIZER = "json"
+CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers.DatabaseScheduler"
+CELERY_RESULT_BACKEND = "redis://redis:6379/0"

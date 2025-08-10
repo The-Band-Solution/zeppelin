@@ -1,0 +1,26 @@
+Usage: celery [OPTIONS] COMMAND [ARGS]...
+Try 'celery --help' for help.
+
+Error: 
+Unable to load celery application.
+Module 'zeppelin' has no attribute 'celery'
+Usage: celery [OPTIONS] COMMAND [ARGS]...
+Try 'celery --help' for help.
+
+Error: 
+Unable to load celery application.
+Module 'zeppelin' has no attribute 'celery'
+Usage: celery [OPTIONS] COMMAND [ARGS]...
+Try 'celery --help' for help.
+
+Error: 
+Unable to load celery application.
+Module 'zeppelin' has no attribute 'celery'
+Usage: celery [OPTIONS] COMMAND [ARGS]...
+Try 'celery --help' for help.
+
+Error: 
+Unable to load celery application.
+Module 'zeppelin' has no attribute 'celery'
+[2025-08-10 09:10:08,390: INFO/MainProcess] beat: Starting...
+[2025-08-10 09:16:26,972: INFO/MainProcess] beat: Starting...

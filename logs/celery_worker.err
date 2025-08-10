@@ -1,0 +1,48 @@
+Usage: celery [OPTIONS] COMMAND [ARGS]...
+Try 'celery --help' for help.
+
+Error: 
+Unable to load celery application.
+Module 'zeppelin' has no attribute 'celery'
+Usage: celery [OPTIONS] COMMAND [ARGS]...
+Try 'celery --help' for help.
+
+Error: 
+Unable to load celery application.
+Module 'zeppelin' has no attribute 'celery'
+Usage: celery [OPTIONS] COMMAND [ARGS]...
+Try 'celery --help' for help.
+
+Error: 
+Unable to load celery application.
+Module 'zeppelin' has no attribute 'celery'
+Usage: celery [OPTIONS] COMMAND [ARGS]...
+Try 'celery --help' for help.
+
+Error: 
+Unable to load celery application.
+Module 'zeppelin' has no attribute 'celery'
+/usr/local/lib/python3.10/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2025-08-10 09:10:09,128: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-08-10 09:10:09,130: INFO/MainProcess] mingle: searching for neighbors
+[2025-08-10 09:10:10,143: INFO/MainProcess] mingle: all alone
+[2025-08-10 09:10:10,162: INFO/MainProcess] celery@9fa1228238c5 ready.
+/usr/local/lib/python3.10/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2025-08-10 09:16:27,743: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-08-10 09:16:27,746: INFO/MainProcess] mingle: searching for neighbors
+[2025-08-10 09:16:28,753: INFO/MainProcess] mingle: all alone
+[2025-08-10 09:16:28,780: INFO/MainProcess] celery@87a1b93eda91 ready.
