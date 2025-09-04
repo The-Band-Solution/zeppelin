@@ -1,12 +1,12 @@
 from django.core.exceptions import ValidationError
 from django.db import models
-from apps.sth.models import Stage
-from apps.practitionerseye.models import Element
-from apps.cseframework.models import Process
-from apps.core.models import Base
-from apps.organization.models import Organization 
-from apps.employee.models import  Employee
-from apps.continuousstar.models import ContinuousActivity
+from sth.models import Stage
+from practitioners_eye.models import Element
+from cse_framework.models import Process
+from core.models import Base
+from organization.models import Organization 
+from employee.models import  Employee
+from continuous_star.models import ContinuousActivity
 
 class AdoptedLevel(Base):
 
@@ -32,11 +32,11 @@ class Statement(Base):
     """
 
     code = models.CharField(max_length=200, null=True, blank=True)
-    statement_statement = models.TextField()
-    sth_stage = models.ForeignKey(Stage, on_delete=models.CASCADE,null=True, blank=True,related_name="questionnarie_sth_stage%(class)s")
-    pe_element = models.ForeignKey(Element, on_delete=models.CASCADE,null=True, blank=True,related_name="questionnarie_pe_element%(class)s")
+    statement = models.TextField()
+    sth_stage = models.ForeignKey(Stage, on_delete=models.CASCADE,null=True, blank=True)
+    pe_element = models.ForeignKey(Element, on_delete=models.CASCADE,null=True, blank=True)
     fcse_processes = models.ManyToManyField(Process)
-    continuous_activity = models.ForeignKey(ContinuousActivity, on_delete=models.CASCADE,null=True, blank=True,related_name="continuous_activity_%(class)s")
+    continuous_activity = models.ForeignKey(ContinuousActivity, on_delete=models.CASCADE,null=True, blank=True)
 
     class meta:
         db_table = 'statement'
@@ -45,7 +45,6 @@ class Statement(Base):
         return self.code + "-"+ self.statement
 
 class FeedbackQuestionnaire(Base):
-    collected_date = models.DateTimeField(auto_now_add=True)
     feedback_date = models.DateTimeField(null=True, blank=True)
 
     def __str__(self):
@@ -60,7 +59,7 @@ class Questionnaire(Base):
     applied_date = models.DateTimeField(null=True, blank=True)
     document = models.FileField(upload_to='documents/%Y/%m/%d/')
     uploaded_at = models.DateTimeField(auto_now_add=True)
-    employee_questionnaire = models.ForeignKey(Employee, on_delete=models.CASCADE, null=True, blank=True,related_name="questionnaire_questionnaire_%(class)s")
+    employee = models.ForeignKey(Employee, on_delete=models.CASCADE, null=True, blank=True)
    
     class meta:
         db_table = 'questionnaire'
@@ -83,11 +82,11 @@ class Answer(Base):
     Represents a answer of questionnaire related to :model:`questionnaire.Questionnaire`, related to :model:`questionnaire.AdoptedLevel` and :model:`questionnaire.Statement`.
     """
 
-    questionnaire_answer = models.ForeignKey(Questionnaire, on_delete=models.CASCADE, blank=True, null=True)
-    adopted_level_answer = models.ForeignKey(AdoptedLevel, on_delete=models.CASCADE)
-    statement_answer = models.ForeignKey(Statement, on_delete=models.CASCADE)
-    comment_answer = models.TextField()
-    organization_answer = models.ForeignKey(Organization, on_delete=models.CASCADE)
+    questionnaire = models.ForeignKey(Questionnaire, on_delete=models.CASCADE, blank=True, null=True)
+    adopted_level = models.ForeignKey(AdoptedLevel, on_delete=models.CASCADE)
+    statement = models.ForeignKey(Statement, on_delete=models.CASCADE)
+    comment = models.TextField()
+    organization = models.ForeignKey(Organization, on_delete=models.CASCADE)
     
    
 

@@ -43,9 +43,9 @@ class QuestionnaireExcelAdmin(admin.ModelAdmin):
 
 @admin.register(Answer)
 class AnswerAdmin(admin.ModelAdmin):
-    list_display = ['id', 'comment_answer']
-    list_display_links = ['id', 'comment_answer']
-    search_fields = ['id', 'comment_answer']
+    list_display = ['id', 'comment']
+    list_display_links = ['id', 'comment']
+    search_fields = ['id', 'comment']
     list_per_page = 25
     ordering = ['-id']
 

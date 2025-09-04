@@ -2,8 +2,8 @@ from pprint import pprint
 from django.conf import settings
 from .models import Statement, AdoptedLevel, Answer, Questionnaire
 import xlrd 
-from apps.organization.services import OrganizationService, OrganizationGoogleFormsService
-from apps.employee.services import EmployeeService, EmployeenGoogleFormsService
+from organization.services import OrganizationService, OrganizationGoogleFormsService
+from employee.services import EmployeeService, EmployeenGoogleFormsService
 import hashlib
 
 class QuestionnaireBase ():

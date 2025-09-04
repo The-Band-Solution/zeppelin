@@ -1,5 +1,3 @@
-from pprint import pprint
-from unicodedata import name
 from django.conf import settings
 from .models import State as Location, Size as OrganizationSize, OrganizationType, Organization
 

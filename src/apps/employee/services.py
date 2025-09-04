@@ -1,6 +1,6 @@
 from django.conf import settings
 from .models import AcademicDegree, AcademicDegreeStatus, KnwoledgeLevel, ExperienceLevel, EmployeeKnowledge, Employee, Position, SthStageKnwoledgeLevel, SthStageExperienceLevel
-from sth.models import Stage
+from apps.sth.models import Stage
 import xlrd 
 
 
