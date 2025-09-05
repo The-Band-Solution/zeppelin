@@ -32,7 +32,7 @@ class Statement(Base):
     """
 
     code = models.CharField(max_length=200, null=True, blank=True)
-    statement_statement = models.TextField()
+    text = models.TextField()
     sth_stage = models.ForeignKey(Stage, on_delete=models.CASCADE,null=True, blank=True,related_name="questionnarie_sth_stage%(class)s")
     pe_element = models.ForeignKey(Element, on_delete=models.CASCADE,null=True, blank=True,related_name="questionnarie_pe_element%(class)s")
     fcse_processes = models.ManyToManyField(Process)
