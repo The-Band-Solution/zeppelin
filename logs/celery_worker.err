@@ -142,3 +142,105 @@ User information: uid=0 euid=0 gid=0 egid=0
 [2025-09-04 19:42:56,033: INFO/MainProcess] mingle: searching for neighbors
 [2025-09-04 19:42:57,040: INFO/MainProcess] mingle: all alone
 [2025-09-04 19:42:57,048: INFO/MainProcess] celery@c313dc1954ec ready.
+/usr/local/lib/python3.10/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2025-09-04 19:47:55,479: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-09-04 19:47:55,480: INFO/MainProcess] mingle: searching for neighbors
+[2025-09-04 19:47:56,487: INFO/MainProcess] mingle: all alone
+[2025-09-04 19:47:56,497: INFO/MainProcess] celery@d4df1404e192 ready.
+/usr/local/lib/python3.10/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2025-09-04 19:59:02,363: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-09-04 19:59:02,365: INFO/MainProcess] mingle: searching for neighbors
+[2025-09-04 19:59:03,372: INFO/MainProcess] mingle: all alone
+[2025-09-04 19:59:03,385: INFO/MainProcess] celery@db4b49a855ca ready.
+/usr/local/lib/python3.10/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2025-09-04 20:02:39,346: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-09-04 20:02:39,350: INFO/MainProcess] mingle: searching for neighbors
+[2025-09-04 20:02:40,357: INFO/MainProcess] mingle: all alone
+[2025-09-04 20:02:40,372: INFO/MainProcess] celery@03b7aa2a1f84 ready.
+/usr/local/lib/python3.10/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2025-09-04 20:14:39,902: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-09-04 20:14:39,906: INFO/MainProcess] mingle: searching for neighbors
+[2025-09-04 20:14:40,913: INFO/MainProcess] mingle: all alone
+[2025-09-04 20:14:40,922: INFO/MainProcess] celery@ba1d57f79c87 ready.
+/usr/local/lib/python3.10/site-packages/django/db/models/base.py:364: RuntimeWarning: Model 'apps_employee.sthstageexperiencelevel' was already registered. Reloading models is not advised as it can lead to inconsistencies, most notably with related models.
+  new_class._meta.apps.register_model(new_class._meta.app_label, new_class)
+/usr/local/lib/python3.10/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2025-09-04 21:09:11,295: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-09-04 21:09:11,297: INFO/MainProcess] mingle: searching for neighbors
+[2025-09-04 21:09:12,304: INFO/MainProcess] mingle: all alone
+[2025-09-04 21:09:12,315: INFO/MainProcess] celery@618cc5a6d9ad ready.
+/usr/local/lib/python3.10/site-packages/django/db/models/base.py:364: RuntimeWarning: Model 'apps_employee.sthstageexperiencelevel' was already registered. Reloading models is not advised as it can lead to inconsistencies, most notably with related models.
+  new_class._meta.apps.register_model(new_class._meta.app_label, new_class)
+/usr/local/lib/python3.10/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2025-09-04 21:10:39,208: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-09-04 21:10:39,211: INFO/MainProcess] mingle: searching for neighbors
+[2025-09-04 21:10:40,218: INFO/MainProcess] mingle: all alone
+[2025-09-04 21:10:40,234: INFO/MainProcess] celery@dea4990373bf ready.
+/usr/local/lib/python3.10/site-packages/django/db/models/base.py:364: RuntimeWarning: Model 'apps_employee.sthstageexperiencelevel' was already registered. Reloading models is not advised as it can lead to inconsistencies, most notably with related models.
+  new_class._meta.apps.register_model(new_class._meta.app_label, new_class)
+/usr/local/lib/python3.10/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2025-09-04 21:13:34,998: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-09-04 21:13:35,000: INFO/MainProcess] mingle: searching for neighbors
+[2025-09-04 21:13:36,007: INFO/MainProcess] mingle: all alone
+[2025-09-04 21:13:36,018: INFO/MainProcess] celery@16fb6ccfe9db ready.
+/usr/local/lib/python3.10/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+[2025-09-04 21:18:11,454: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-09-04 21:18:11,456: INFO/MainProcess] mingle: searching for neighbors
+[2025-09-04 21:18:12,463: INFO/MainProcess] mingle: all alone
+[2025-09-04 21:18:12,475: INFO/MainProcess] celery@678e2e4b7364 ready.

@@ -1,5 +1,5 @@
 from .models import (
-    Dimension,
+    Category,
     Element,
 )
 from .serializers import (
@@ -19,7 +19,7 @@ import django_filters.rest_framework
 
 
 class DimensionViewSet(ModelViewSet):
-    queryset = Dimension.objects.all()
+    queryset = Category.objects.all()
     pagination_class = CustomPagination
     authentication_classes = [OAuth2Authentication, SessionAuthentication]
     permission_classes = permission_classes = [Or(IsAdminUser, TokenHasReadWriteScope)]

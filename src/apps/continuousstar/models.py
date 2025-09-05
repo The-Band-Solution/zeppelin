@@ -8,7 +8,7 @@ class ContinuousPhase(Base):
     """"""
 
     class Meta:
-        db_table = 'continuousphase'
+        db_table = 'continuous_star_continuous_phase'
 
 class ContinuousActivity(Base):
     """"""
@@ -16,5 +16,5 @@ class ContinuousActivity(Base):
     continuous_phase = models.ForeignKey(ContinuousPhase, blank=True, null=True, on_delete=models.CASCADE, related_name="continuous_phase_%(class)s")
 
     class Meta:
-        db_table = 'continuousactivity'
+        db_table = 'continuous_star_continuous_activity'
 
