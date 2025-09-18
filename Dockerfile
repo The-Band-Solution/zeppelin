@@ -11,7 +11,8 @@ WORKDIR /app
 
 # Copia tudo do projeto (raiz, onde está o docker-compose.yml)
 COPY ./src/ .
-
+COPY .env .
+COPY supervisord.conf .
 # Instala dependências do sistema
 RUN apt-get update && apt-get install -y \
     build-essential \
@@ -25,7 +26,6 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Instala dependências Python
-#RUN pip install flower
 RUN pip install -r requirements.txt
 
 RUN python manage.py collectstatic --noinput --no-post-process

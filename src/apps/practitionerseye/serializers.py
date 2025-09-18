@@ -1,18 +1,18 @@
 from rest_framework import serializers
 from .models import (
-    Dimension,
+    Category,
     Element,
 )
 
 class DimensionWriteSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Dimension
+        model = Category
         exclude = ("polymorphic_ctype",)
 
 class DimensionReadSerializer(serializers.ModelSerializer):
     class Meta:
         depth = 1
-        model = Dimension
+        model = Category
         exclude = ("polymorphic_ctype",)
 
 

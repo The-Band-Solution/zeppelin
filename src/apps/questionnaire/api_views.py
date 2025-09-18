@@ -98,7 +98,7 @@ class QuestionnaireViewSet(ModelViewSet):
     )
     filterset_fields = ['applied_date']
     search_fields = ['applied_date']
-    ordering_fields = '__all__'
+    ordering_fields = ['applied_date']
     ordering = ["id"]
     
     def get_serializer_class(self):
@@ -116,10 +116,11 @@ class QuestionnaireExcelViewSet(ModelViewSet):
         filters.OrderingFilter,
         django_filters.rest_framework.DjangoFilterBackend
     )
-    filterset_fields = '__all__'
-    search_fields = []
-    ordering_fields = '__all__'
+    filterset_fields = ['applied_date']
+    search_fields = ['applied_date']
+    ordering_fields = ['applied_date']
     ordering = ["id"]
+    
     
     def get_serializer_class(self):
         if self.request.method in ['GET']:

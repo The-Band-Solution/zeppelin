@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import Dimension,Element
+from .models import Category,Element
 
-@admin.register(Dimension)
+@admin.register(Category)
 class DimensionAdmin(admin.ModelAdmin):
     list_display = ['id',]
     list_display_links = ['id',]

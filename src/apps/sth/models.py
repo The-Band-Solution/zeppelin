@@ -1,15 +1,16 @@
 from django.db import models
-from django.utils.translation import gettext_lazy as _
-from polymorphic.models import PolymorphicModel
 from apps.core.models import Base
 
+class Stage (Base):
 
-class Stage(Base):
-    """"""
+    """
+    Represents a stage of StH.
+    """
 
+    class meta:
+        db_table = 'sth_stage'
+        ordering = ['name']
 
-
-
-    class Meta:
-        db_table = 'stage'
-
+    def __str__(self):
+        """ String para representar o stage"""
+        return self.name

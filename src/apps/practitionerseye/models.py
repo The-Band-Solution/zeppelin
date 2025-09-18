@@ -1,25 +1,35 @@
 from django.db import models
-from django.utils.translation import gettext_lazy as _
-from polymorphic.models import PolymorphicModel
 from apps.core.models import Base
 
+class Category (Base):
 
-class Dimension(Base):
-    """"""
+    """
+    Represents a category of PE.
+    """
 
+    name = models.CharField(max_length=200, help_text= "Category's name", unique=True)
+    description = models.TextField(help_text= "Category's description")
 
+    class meta:
+        db_table = 'practitioners_eye_category'
 
+    def __str__(self):
+        """ String para representar o category"""
+        return self.name
 
-    class Meta:
-        db_table = 'dimension'
+class Element (Base):
 
-class Element(Base):
-    """"""
+    """
+    Represents a element of PE, related to :model:`practitioners_eye.category`.
+    """
 
+    name = models.CharField(max_length=200,help_text= "Element's name")
+    description = models.TextField(help_text= "Element's description")
+    dimension = models.ForeignKey(Category, on_delete=models.CASCADE,help_text= "Element's category")
 
-
-    element_dimension = models.ForeignKey(Dimension, blank=True, null=True, on_delete=models.CASCADE, related_name="dimension_%(class)s")
-
-    class Meta:
-        db_table = 'element'
-
+    class meta:
+        db_table = 'practitioners_eye_element'
+        ordering = ['dimension.name','name']
+    def __str__(self):
+        """ String para representar o element"""
+        return self.dimension.name +" - "+self.name

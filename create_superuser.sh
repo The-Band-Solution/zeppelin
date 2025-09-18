@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Nome do container Django
-CONTAINER_NAME="dashboard_the_band"
+CONTAINER_NAME="zeppelin"
 
 # Caminho do script Python dentro do container
 SCRIPT_PATH="/app/src/create_superuser.py"

@@ -11,9 +11,9 @@ class AdoptedLevelAdmin(admin.ModelAdmin):
 
 @admin.register(Statement)
 class StatementAdmin(admin.ModelAdmin):
-    list_display = ['id', 'code', 'statement']
-    list_display_links = ['id', 'code', 'statement']
-    search_fields = ['id', 'code', 'statement']
+    list_display = ['id', 'code', 'text']
+    list_display_links = ['id', 'code', 'text']
+    search_fields = ['id', 'code', 'text']
     list_per_page = 25
     ordering = ['-id']
 
@@ -43,9 +43,9 @@ class QuestionnaireExcelAdmin(admin.ModelAdmin):
 
 @admin.register(Answer)
 class AnswerAdmin(admin.ModelAdmin):
-    list_display = ['id', 'comment']
-    list_display_links = ['id', 'comment']
-    search_fields = ['id', 'comment']
+    list_display = ['id', 'comment_answer']
+    list_display_links = ['id', 'comment_answer']
+    search_fields = ['id', 'comment_answer']
     list_per_page = 25
     ordering = ['-id']
 
