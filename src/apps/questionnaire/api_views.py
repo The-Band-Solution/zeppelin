@@ -38,7 +38,7 @@ class AdoptedLevelViewSet(ModelViewSet):
     )
     filterset_fields = '__all__'
     search_fields = ['percentage']
-    ordering_fields = '__all__'
+    ordering_fields = 'percentage'
     ordering = ["id"]
     
     def get_serializer_class(self):
