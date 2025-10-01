@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')), 
     path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('', include('apps.auth.api_urls')),
     path('', include('apps.sth.api_urls')),
     path('', include('apps.continuousstar.api_urls')),
     path('', include('apps.cseframework.api_urls')),
