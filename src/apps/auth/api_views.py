@@ -22,11 +22,5 @@ class RegistrarUsuarioViewSet(viewsets.ModelViewSet):
         user = serializer.save()
 
         return Response({
-            "message": "Usuário cadastrado com sucesso",
-            "user": {
-                "id": user.id,
-                "email": user.email,
-                "firstName": user.first_name,
-                "lastName": user.last_name,
-            }
+            "message": "Usuário cadastrado com sucesso"
         }, status=status.HTTP_201_CREATED)
