@@ -86,6 +86,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
 ]
 
+CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'zeppelin.urls'
 
@@ -200,7 +201,6 @@ URL = config('URL')
 URL_VALIDATION = config('URL_VALIDATION')
 
 HASHIDS_SALT = config('HASHIDS_SALT')
-
 
 LOGGING = {
     "version": 1,
